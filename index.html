@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deb Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="brand"></a>
+        <ul class="nav-menu">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#reserve">Reserve</a></li>
+            <li><a href="#contact">Reach Out</a></li>
+        </ul>
+    </header>
+
+    <section class="hero" id="home">
+        <img src="images/bg-layer1.jpg" alt="Bakery Background" class="layer base">
+        <img src="images/floating-bread.png" alt="Floating Breads" class="layer breads">
+        <img src="images/cloud-pastries.png" alt="Pastry Clouds" class="layer clouds">
+        <img src="images/main-counter.png" alt="Bakery Counter" class="layer counter">
+        <h1 class="hero-text">Deb Bakery</h1>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="content-box">
+            <h1>Our Story</h1>
+            <p>
+                Since 1985, Deb Bakery has been crafting traditional baked goods with passion.
+                Using time-honored recipes and premium ingredients, we create unforgettable
+                flavors that bring people together.
+            </p>
+        </div>
+    </section>
+
+    <section class="reservation" id="reserve">
+        <h2>Table Reservation</h2>
+        <form class="booking-form">
+            <div class="input-group">
+                <label>Name:</label>
+                <input type="text" required>
+            </div>
+            <div class="input-group">
+                <label>Email:</label>
+                <input type="email" required>
+            </div>
+            <div class="input-group">
+                <label>Date:</label>
+                <input type="date" required>
+            </div>
+            <div class="input-group">
+                <label>Party Size:</label>
+                <select>
+                    <option>2 People</option>
+                    <option>4 People</option>
+                    <option>6 People</option>
+                    <option>8+ People</option>
+                </select>
+            </div>
+            <button class="cta-btn">Book Table</button>
+        </form>
+    </section>
+
+    
+    <section class="contact-section" id="contact">
+        <h2>Visit Us</h2>
+        <div class="contact-container">
+            <div class="contact-card">
+                <h3>Location & Hours</h3>
+                <p class="highlight-text">
+                    123 Bakery Lane<br>
+                    Paris, France 75001
+                </p>
+                <div class="hours-info">
+                    <p>Monday-Friday: 7AM - 7PM</p>
+                    <p>Saturday: 8AM - 8PM</p>
+                    <p>Sunday: 8AM - 5PM</p>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <h3>Get In Touch</h3>
+                <form class="message-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <textarea rows="5" placeholder="Your Message..."></textarea>
+                    <button class="cta-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
